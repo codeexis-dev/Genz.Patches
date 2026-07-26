@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gen Z - Our Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Custom CSS for fonts */
+        body {
+            font-family: 'Luckiest Guy', cursive;
+            background-color: #f8fafc; /* Light blue-gray background */
+            color: #334155; /* Slate-700 for general text */
+        }
+        .font-bungee {
+            font-family: 'Bungee', cursive;
+        }
+        .font-luckiest-guy {
+            font-family: 'Luckiest Guy', cursive;
+        }
+        /* Custom scrollbar for a premium feel */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0; /* Light gray */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8; /* Darker gray-blue */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b; /* Even darker on hover */
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+    <!-- Navbar Section -->
+    <nav class="bg-white shadow-lg py-4 px-6 md:px-12 flex justify-between items-center rounded-b-xl sticky top-0 z-50">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+            <a href="index.html" class="text-4xl font-bungee text-indigo-700 hover:text-indigo-900 transition duration-300 ease-in-out">Gen Z</a>
+        </div>
+
+        <!-- Desktop Menu - simplified to just "Home" for this page -->
+        <div class="flex items-center space-x-8">
+            <a href="index.html" class="px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-luckiest-guy text-lg rounded-full shadow-lg hover:from-indigo-600 hover:to-purple-700 transition duration-300 ease-in-out transform hover:scale-105">
+                Back to Home
+            </a>
+        </div>
+    </nav>
+
+    <!-- Portfolio Hero Section -->
+    <header class="relative bg-gradient-to-br from-purple-600 to-indigo-800 text-white flex items-center justify-center min-h-[50vh] px-6 py-20 rounded-b-3xl overflow-hidden shadow-2xl">
+        <!-- Background Elements for Visual Appeal -->
+        <div class="absolute inset-0 z-0 opacity-20">
+            <img src="./images/IMG-20250213-WA0015.jpg" alt="Abstract Background" class="w-full h-full object-cover blur-sm">
+        </div>
+        <div class="absolute inset-0 z-0 bg-black opacity-30"></div>
+
+        <div class="relative z-10 text-center max-w-4xl space-y-6">
+            <h1 class="text-5xl md:text-7xl font-bungee leading-tight drop-shadow-lg animate-fade-in-down">
+                Our Showcase of Excellence
+            </h1>
+            <p class="text-xl md:text-2xl font-luckiest-guy opacity-90 drop-shadow-md animate-fade-in-up">
+                Discover the diverse range of custom projects we've brought to life for our clients.
+            </p>
+        </div>
+    </header>
+
+    <!-- Portfolio Projects Section -->
+    <section id="portfolio-projects" class="py-20 px-6 md:px-12 bg-white rounded-3xl -mt-16 relative z-20 shadow-xl">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-5xl font-bungee text-indigo-800 mb-12 animate-fade-in">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Project Item 1 -->
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-2 border-2 border-indigo-200 text-left">
+                    <img src="./images/portfollio1.png" alt="Urban Vibe Collection" class="w-full h-72 object-cover rounded-xl mb-6 shadow-md">
+                    <h3 class="text-3xl font-bungee text-indigo-700 mb-3">The "Urban Vibe" Collection</h3>
+                    <p class="text-lg font-luckiest-guy text-gray-700 leading-relaxed mb-4">
+                        A full range of custom apparel for a burgeoning streetwear brand. We developed embroidered patches for jackets and caps, alongside screen-printed tees and hoodies featuring intricate graphic designs. This project highlighted our ability to maintain brand consistency across multiple product types.
+                    </p>
+                    <ul class="list-disc list-inside text-lg font-luckiest-guy text-gray-600 mb-4 space-y-1">
+                        <li> Client:  Streetwear Collective</li>
+                        <li> Services:  Embroidered Patches, Screen Printing, Design Consultation</li>
+                        <li> Impact:  Boosted brand recognition and sales for their new line.</li>
+                    </ul>
+                    <a href="index.html#contact" class="inline-block mt-4 px-6 py-3 bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 font-luckiest-guy rounded-full shadow-lg hover:from-yellow-500 hover:to-orange-600 transition duration-300 ease-in-out transform hover:scale-105">
+                        Get a Similar Look!
+                    </a>
+                </div>
+
+                <!-- Project Item 2 -->
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-2 border-2 border-purple-200 text-left">
+                    <img src="./images/portfollio2.png" alt="Sports Team Gear" class="w-full h-72 object-cover rounded-xl mb-6 shadow-md">
+                    <h3 class="text-3xl font-bungee text-indigo-700 mb-3">Championship Team Gear</h3>
+                    <p class="text-lg font-luckiest-guy text-gray-700 leading-relaxed mb-4">
+                        Designed and produced custom team uniforms for a local sports club's championship run. This involved high-durability heat transfers for jerseys and custom patches for team bags. Precision and vibrant color matching were key to their winning aesthetic.
+                    </p>
+                    <ul class="list-disc list-inside text-lg font-luckiest-guy text-gray-600 mb-4 space-y-1">
+                        <li> Client:  Local Soccer Club</li>
+                        <li> Services:  Heat Transfer Printing, Custom Patches, Bulk Production</li>
+                        <li> Impact:  Unified team appearance, boosted morale.</li>
+                    </ul>
+                    <a href="index.html#contact" class="inline-block mt-4 px-6 py-3 bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 font-luckiest-guy rounded-full shadow-lg hover:from-yellow-500 hover:to-orange-600 transition duration-300 ease-in-out transform hover:scale-105">
+                        Get Your Team Kitted!
+                    </a>
+                </div>
+
+                <!-- Project Item 3 -->
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-2 border-2 border-blue-200 text-left">
+                    <img src="./images/portfollio3.png" alt="Corporate Branding Apparel" class="w-full h-72 object-cover rounded-xl mb-6 shadow-md">
+                    <h3 class="text-3xl font-bungee text-indigo-700 mb-3">Corporate Event Branding</h3>
+                    <p class="text-lg font-luckiest-guy text-gray-700 leading-relaxed mb-4">
+                        Created sophisticated branded T-shirts and woven patches for a corporate conference. The focus was on a professional yet stylish look, utilizing subtle tones and high-thread-count embroidery for a premium finish.
+                    </p>
+                    <ul class="list-disc list-inside text-lg font-luckiest-guy text-gray-600 mb-4 space-y-1">
+                        <li> Client:  Tech Innovators Inc.</li>
+                        <li> Services:  Woven Patches, Direct-to-Garment Printing, Corporate Solutions</li>
+                        <li> Impact:  Enhanced professional image at a major industry event.</li>
+                    </ul>
+                    <a href="index.html#contact" class="inline-block mt-4 px-6 py-3 bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 font-luckiest-guy rounded-full shadow-lg hover:from-yellow-500 hover:to-orange-600 transition duration-300 ease-in-out transform hover:scale-105">
+                        Brand Your Next Event!
+                    </a>
+                </div>
+
+                <!-- Project Item 4 -->
+                <div class="bg-gray-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:-translate-y-2 border-2 border-red-200 text-left">
+                    <img src="./images/portfollio4.png" alt="Band Merchandise" class="w-full h-72 object-cover rounded-xl mb-6 shadow-md">
+                    <h3 class="text-3xl font-bungee text-indigo-700 mb-3">Rock Band Tour Merch</h3>
+                    <p class="text-lg font-luckiest-guy text-gray-700 leading-relaxed mb-4">
+                        Developed edgy, distressed-look T-shirts and custom PVC patches for a touring rock band. The designs captured their unique sound and stage presence, creating highly desirable merchandise for their fans.
+                    </p>
+                    <ul class="list-disc list-inside text-lg font-luckiest-guy text-gray-600 mb-4 space-y-1">
+                        <li> Client:  "Sonic Rift" Band</li>
+                        <li> Services:  Custom T-Shirts (Distressed Print), PVC Patches, Creative Design</li>
+                        <li> Impact:  Highly successful merchandise sales during their tour.</li>
+                    </ul>
+                    <a href="index.html#contact" class="inline-block mt-4 px-6 py-3 bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 font-luckiest-guy rounded-full shadow-lg hover:from-yellow-500 hover:to-orange-600 transition duration-300 ease-in-out transform hover:scale-105">
+                        Design Your Fan Merch!
+                    </a>
+                </div>
+            </div>
+            <a href="index.html#quote" class="inline-block mt-16 px-10 py-5 bg-gradient-to-r from-green-400 to-teal-500 text-white font-luckiest-guy text-2xl rounded-full shadow-xl hover:from-green-500 hover:to-teal-600 transition duration-300 ease-in-out transform hover:scale-105">
+                Start Your Own Legacy Project!
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Section (Copied from main page for consistency) -->
+    <footer class="bg-gray-900 text-gray-300 py-12 px-6 md:px-12 rounded-t-3xl shadow-inner mt-16">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+            <div class="text-center md:text-left">
+                <p class="text-xl font-bungee text-white mb-2">Gen Z</p>
+                <p class="text-sm font-luckiest-guy">&copy; 2025 Gen Z. All rights reserved.</p>
+            </div>
+            <div class="flex space-x-6 text-2xl">
+                <!-- <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-facebook-f"></i></a> -->
+                <a href="https://www.instagram.com/codeexis.dev/" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/EthanCole111" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                <!-- <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-linkedin-in"></i></a> -->
+            </div>
+            <div class="text-center md:text-right space-y-2">
+                <a href="index.html#home" class="block text-sm font-luckiest-guy hover:text-white transition-colors duration-300">Home</a>
+                <a href="about.html" class="block text-sm font-luckiest-guy hover:text-white transition-colors duration-300">About Us</a>
+                <a href="gallery.html" class="block text-sm font-luckiest-guy hover:text-white transition-colors duration-300">Gallery</a>
+                <a href="index.html#quote" class="block text-sm font-luckiest-guy hover:text-white transition-colors duration-300">Get a Quote</a>
+                <a href="index.html#contact" class="block text-sm font-luckiest-guy hover:text-white transition-colors duration-300">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

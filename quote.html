@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gen Z - Get a Free Quote</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Custom CSS for fonts */
+        body {
+            font-family: 'Luckiest Guy', cursive;
+            background-color: #f8fafc; /* Light blue-gray background */
+            color: #334155; /* Slate-700 for general text */
+        }
+        .font-bungee {
+            font-family: 'Bungee', cursive;
+        }
+        .font-luckiest-guy {
+            font-family: 'Luckiest Guy', cursive;
+        }
+        /* Custom scrollbar for a premium feel */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0; /* Light gray */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8; /* Darker gray-blue */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b; /* Even darker on hover */
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+    <!-- Navbar Section -->
+    <nav class="bg-white shadow-lg py-4 px-6 md:px-12 flex justify-between items-center rounded-b-xl sticky top-0 z-50">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+            <a href="index.html" class="text-4xl font-bungee text-indigo-700 hover:text-indigo-900 transition duration-300 ease-in-out">Gen Z</a>
+        </div>
+
+        <!-- Desktop Menu - simplified to just "Home" for this page -->
+        <div class="flex items-center space-x-8">
+            <a href="index.html" class="px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-luckiest-guy text-lg rounded-full shadow-lg hover:from-indigo-600 hover:to-purple-700 transition duration-300 ease-in-out transform hover:scale-105">
+                Back to Home
+            </a>
+        </div>
+    </nav>
+
+    <!-- Quote Hero Section -->
+    <header class="relative bg-gradient-to-br from-yellow-400 to-orange-500 text-gray-900 flex items-center justify-center min-h-[50vh] px-6 py-20 rounded-b-3xl overflow-hidden shadow-2xl">
+        <!-- Background Elements for Visual Appeal -->
+        <div class="absolute inset-0 z-0 opacity-20">
+            <img src="https://placehold.co/1920x1080/FBBF24/FFFFFF?text=Creative+Abstract+Pattern" alt="Abstract Background" class="w-full h-full object-cover blur-sm">
+        </div>
+        <div class="absolute inset-0 z-0 bg-black opacity-10"></div>
+
+        <div class="relative z-10 text-center max-w-4xl space-y-6">
+            <h1 class="text-5xl md:text-7xl font-bungee leading-tight drop-shadow-lg animate-fade-in-down">
+                Your Custom Project Starts Here!
+            </h1>
+            <p class="text-xl md:text-2xl font-luckiest-guy opacity-90 drop-shadow-md animate-fade-in-up">
+                Tell us about your vision and get a personalized quote today. No obligations, just pure creative possibilities!
+            </p>
+        </div>
+    </header>
+
+    <!-- Quote Request Form Section -->
+    <section id="quote-form" class="py-20 px-6 md:px-12 bg-white rounded-3xl -mt-16 relative z-20 shadow-xl">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-5xl font-bungee text-indigo-800 mb-8 animate-fade-in">Request a Free Quote</h2>
+            <p class="text-lg font-luckiest-guy text-gray-700 mb-12">
+                Fill out the form below with as much detail as you can, and our team will get back to you with a comprehensive quote tailored to your custom project. The more information you provide, the faster and more accurate your quote will be!
+            </p>
+            <form class="space-y-8 bg-gray-50 p-8 rounded-2xl shadow-lg border border-gray-200">
+                <!-- Personal Information -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-lg font-luckiest-guy text-gray-700 mb-2 text-left">Your Name <span class="text-red-500">*</span></label>
+                        <input type="text" id="name" name="name" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 font-luckiest-guy" placeholder="John Doe" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-lg font-luckiest-guy text-gray-700 mb-2 text-left">Your Email <span class="text-red-500">*</span></label>
+                        <input type="email" id="email" name="email" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 font-luckiest-guy" placeholder="john.doe@example.com" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="phone" class="block text-lg font-luckiest-guy text-gray-700 mb-2 text-left">Phone Number (Optional)</label>
+                    <input type="tel" id="phone" name="phone" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 font-luckiest-guy" placeholder="(123) 456-7890">
+                </div>
+                <div>
+                    <label for="project_name" class="block text-lg font-luckiest-guy text-gray-700 mb-2 text-left">Project Name / Title (Optional)</label>
+                    <input type="text" id="project_name" name="project_name" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 font-luckiest-guy" placeholder="My Awesome Team Gear">
+                </div>
+
+                <!-- Product Details -->
+                <div>
+                    <label for="product_type" class="block text-lg font-luckiest-guy text-gray-700 mb-2 text-left">Type of Product <span class="text-red-500">*</span></label>
+                    <select id="product_type" name="product_type" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 font-luckiest-guy appearance-none bg-white pr-8" required>
+                        <option value="">Select Product Type</option>
+                        <option value="patches">Custom Patches</option>
+                        <option value="tshirts">Custom T-Shirts</option>
+                        <option value="both">Both Patches & T-Shirts</option>
+                        <option value="other">Other (Please describe below)</option>
+                    </select>
+                </div>
+
+                <div id="patch_options" class="space-y-6 hidden">
+                    <h3 class="text-2xl font-bungee text-indigo-700 mb-4 text-left">Patch Details</h3>
+                    <div>
+                        <label for="patch_shape" class="block text-lg font-luckiest-guy text-gray-700 mb-2 text-left">Patch Shape</label>
+                        <select id="patch_shape" name="patch_shape" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 font-luckiest-guy appearance-none bg-white pr-8">
+                            <option value="">Select Shape</option>
+                            <option value="circle">Circle</option>
+                            <option value="square">Square</option>
+                            <option value="rectangle">Rectangle</option>
+                            <option value="oval">Oval</option>
+                            <option value="custom">Custom (Describe in design notes)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="patch_border" class="block text-lg font-luckiest-guy text-gray-700 mb-2 text-left">Patch Border Type</label>
+                        <select id="patch_border" name="patch_border" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 font-luckiest-guy appearance-none bg-white pr-8">
+                            <option value="">Select Border Type</option>
+                            <option value="merrowed">Merrowed (Overlocked)</option>
+                            <option value="embroidered">Embroidered (Satin Stitch)</option>
+                            <option value="laser_cut">Laser Cut (No Border)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="patch_backing" class="block text-lg font-luckiest-guy text-gray-700 mb-2 text-left">Patch Backing Type</label>
+                        <select id="patch_backing" name="patch_backing" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 font-luckiest-guy appearance-none bg-white pr-8">
+                            <option value="">Select Backing Type</option>
+                            <option value="sew_on">Sew-On</option>
+                            <option value="iron_on">Iron-On (Heat Seal)</option>
+                            <option value="velcro">Velcro</option>
+                            <option value="peel_stick">Peel & Stick (Self-Adhesive)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="tshirt_options" class="space-y-6 hidden">
+                    <h3 class="text-2xl font-bungee text-indigo-700 mb-4 text-left">T-Shirt Details</h3>
+                    <div>
+                        <label for="garment_type" class="block text-lg font-luckiest-guy text-gray-700 mb-2 text-left">Garment Type</label>
+                        <select id="garment_type" name="garment_type" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 font-luckiest-guy appearance-none bg-white pr-8">
+                            <option value="">Select Garment Type</option>
+                            <option value="tshirt">T-Shirt (Short Sleeve)</option>
+                            <option value="long_sleeve">Long Sleeve T-Shirt</option>
+                            <option value="hoodie">Hoodie</option>
+                            <option value="sweatshirt">Sweatshirt</option>
+                            <option value="polo">Polo Shirt</option>
+                            <option value="tank_top">Tank Top</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="fabric_blend" class="block text-lg font-luckiest-guy text-gray-700 mb-2 text-left">Preferred Fabric Blend</label>
+                        <select id="fabric_blend" name="fabric_blend" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 font-luckiest-guy appearance-none bg-white pr-8">
+                            <option value="">Select Fabric</option>
+                            <option value="cotton">100% Cotton</option>
+                            <option value="poly_blend">Cotton/Polyester Blend</option>
+                            <option value="tri_blend">Tri-Blend</option>
+                            <option value="polyester">100% Polyester</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="printing_method" class="block text-lg font-luckiest-guy text-gray-700 mb-2 text-left">Preferred Printing Method</label>
+                        <select id="printing_method" name="printing_method" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 font-luckiest-guy appearance-none bg-white pr-8">
+                            <option value="">Select Method</option>
+                            <option value="screen_print">Screen Printing</option>
+                            <option value="dtg">Direct-to-Garment (DTG)</option>
+                            <option value="heat_transfer">Heat Transfer</option>
+                            <option value="embroidery">Embroidery</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="print_locations" class="block text-lg font-luckiest-guy text-gray-700 mb-2 text-left">Number of Print Locations</label>
+                        <input type="number" id="print_locations" name="print_locations" min="1" max="4" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 font-luckiest-guy" placeholder="e.g., 1 (front only)">
+                        <p class="text-sm text-gray-500 mt-2 text-left">e.g., 1 (front), 2 (front & back), 3 (front, back, sleeve), etc.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="quantity" class="block text-lg font-luckiest-guy text-gray-700 mb-2 text-left">Desired Quantity <span class="text-red-500">*</span></label>
+                    <input type="number" id="quantity" name="quantity" min="1" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 font-luckiest-guy" placeholder="e.g., 50" required>
+                    <p class="text-sm text-gray-500 mt-2 text-left">Minimum quantity varies by product type. We'll confirm details with your quote.</p>
+                </div>
+
+                <div>
+                    <label for="design_description" class="block text-lg font-luckiest-guy text-gray-700 mb-2 text-left">Design Idea/Description <span class="text-red-500">*</span></label>
+                    <textarea id="design_description" name="design_description" rows="6" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 font-luckiest-guy" placeholder="Describe your design concept, preferred colors, approximate size, and any specific details (e.g., embroidered patch, full-color T-shirt print, distressed look, etc.)." required></textarea>
+                </div>
+
+                <div>
+                    <label for="design_upload" class="block text-lg font-luckiest-guy text-gray-700 mb-2 text-left">Upload Design File (Optional)</label>
+                    <input type="file" id="design_upload" name="design_upload" accept=".jpg,.jpeg,.png,.pdf,.ai,.eps,.svg" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 font-luckiest-guy file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-lg file:font-luckiest-guy file:bg-indigo-50 file:text-indigo-700 hover:file:bg-indigo-100">
+                    <p class="text-sm text-gray-500 mt-2 text-left">Accepted formats: JPG, PNG, PDF, AI, EPS, SVG. Max file size: 10MB.</p>
+                </div>
+
+                <div>
+                    <label for="budget_range" class="block text-lg font-luckiest-guy text-gray-700 mb-2 text-left">Approximate Budget Range (Optional)</label>
+                    <select id="budget_range" name="budget_range" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 font-luckiest-guy appearance-none bg-white pr-8">
+                        <option value="">Select Budget Range</option>
+                        <option value="under_250">$0 - $250</option>
+                        <option value="250_500">$251 - $500</option>
+                        <option value="500_1000">$501 - $1,000</option>
+                        <option value="1000_2500">$1,001 - $2,500</option>
+                        <option value="over_2500">Over $2,500</option>
+                    </select>
+                    <p class="text-sm text-gray-500 mt-2 text-left">This helps us tailor options to your financial plan.</p>
+                </div>
+
+                <div>
+                    <label for="deadline" class="block text-lg font-luckiest-guy text-gray-700 mb-2 text-left">Desired Deadline (Optional)</label>
+                    <input type="date" id="deadline" name="deadline" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 font-luckiest-guy">
+                    <p class="text-sm text-gray-500 mt-2 text-left">If you have a specific date you need your order completed by.</p>
+                </div>
+
+                <div>
+                    <label for="how_heard" class="block text-lg font-luckiest-guy text-gray-700 mb-2 text-left">How did you hear about us? (Optional)</label>
+                    <select id="how_heard" name="how_heard" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 font-luckiest-guy appearance-none bg-white pr-8">
+                        <option value="">Select Option</option>
+                        <option value="search_engine">Search Engine (Google, Bing, etc.)</option>
+                        <option value="social_media">Social Media</option>
+                        <option value="referral">Friend/Colleague Referral</option>
+                        <option value="event">Event/Trade Show</option>
+                        <option value="online_ad">Online Advertisement</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="additional_notes" class="block text-lg font-luckiest-guy text-gray-700 mb-2 text-left">Additional Notes</label>
+                    <textarea id="additional_notes" name="additional_notes" rows="4" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 font-luckiest-guy" placeholder="Any other details, questions, or specific requirements you'd like us to know."></textarea>
+                </div>
+
+                <button type="submit" class="w-full px-8 py-5 bg-gradient-to-r from-indigo-600 to-purple-700 text-white font-luckiest-guy text-2xl rounded-full shadow-xl hover:from-indigo-700 hover:to-purple-800 transition duration-300 ease-in-out transform hover:scale-105 hover:-translate-y-1">
+                    Submit Quote Request
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- What Happens Next Section -->
+    <section id="what-happens-next" class="py-20 px-6 md:px-12 bg-indigo-50 rounded-3xl my-16 shadow-xl">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-5xl font-bungee text-indigo-800 mb-12 animate-fade-in">What Happens After You Submit?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-indigo-100 transform hover:scale-105 transition duration-300">
+                    <div class="text-6xl text-purple-600 mb-4"><i class="fas fa-check-circle"></i></div>
+                    <h3 class="text-2xl font-bungee text-indigo-700 mb-3">1. Confirmation</h3>
+                    <p class="text-lg font-luckiest-guy text-gray-700">You'll receive an email confirmation that we've received your request.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-indigo-100 transform hover:scale-105 transition duration-300">
+                    <div class="text-6xl text-yellow-500 mb-4"><i class="fas fa-comments"></i></div>
+                    <h3 class="text-2xl font-bungee text-indigo-700 mb-3">2. Personal Review</h3>
+                    <p class="text-lg font-luckiest-guy text-gray-700">Our design specialists will review your details and may contact you for clarification.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-indigo-100 transform hover:scale-105 transition duration-300">
+                    <div class="text-6xl text-blue-600 mb-4"><i class="fas fa-handshake"></i></div>
+                    <h3 class="text-2xl font-bungee text-indigo-700 mb-3">3. Your Quote!</h3>
+                    <p class="text-lg font-luckiest-guy text-gray-700">We'll send you a detailed, no-obligation quote within 1-2 business days.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section (Copied from main page for consistency) -->
+    <footer class="bg-gray-900 text-gray-300 py-12 px-6 md:px-12 rounded-t-3xl shadow-inner mt-16">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+            <div class="text-center md:text-left">
+                <p class="text-xl font-bungee text-white mb-2">Gen Z</p>
+                <p class="text-sm font-luckiest-guy">&copy; 2025 Gen Z. All rights reserved.</p>
+            </div>
+            <div class="flex space-x-6 text-2xl">
+                <!-- <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-facebook-f"></i></a> -->
+                <a href="https://www.instagram.com/codeexis.dev/" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/EthanCole111" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                <!-- <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-linkedin-in"></i></a> -->
+            </div>
+            <div class="text-center md:text-right space-y-2">
+                <a href="index.html#home" class="block text-sm font-luckiest-guy hover:text-white transition-colors duration-300">Home</a>
+                <a href="about.html" class="block text-sm font-luckiest-guy hover:text-white transition-colors duration-300">About Us</a>
+                <a href="gallery.html" class="block text-sm font-luckiest-guy hover:text-white transition-colors duration-300">Gallery</a>
+                <a href="portfolio.html" class="block text-sm font-luckiest-guy hover:text-white transition-colors duration-300">Portfolio</a>
+                <a href="index.html#contact" class="block text-sm font-luckiest-guy hover:text-white transition-colors duration-300">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to toggle patch/t-shirt specific options based on product type selection
+        document.addEventListener('DOMContentLoaded', function() {
+            const productTypeSelect = document.getElementById('product_type');
+            const patchOptionsDiv = document.getElementById('patch_options');
+            const tshirtOptionsDiv = document.getElementById('tshirt_options');
+
+            function toggleProductOptions() {
+                const selectedValue = productTypeSelect.value;
+                patchOptionsDiv.classList.add('hidden');
+                tshirtOptionsDiv.classList.add('hidden');
+
+                if (selectedValue === 'patches') {
+                    patchOptionsDiv.classList.remove('hidden');
+                } else if (selectedValue === 'tshirts') {
+                    tshirtOptionsDiv.classList.remove('hidden');
+                } else if (selectedValue === 'both') {
+                    patchOptionsDiv.classList.remove('hidden');
+                    tshirtOptionsDiv.classList.remove('hidden');
+                }
+            }
+
+            productTypeSelect.addEventListener('change', toggleProductOptions);
+            // Call on load to ensure correct initial state if form is reloaded with a value
+            toggleProductOptions();
+        });
+    </script>
+</body>
+</html>

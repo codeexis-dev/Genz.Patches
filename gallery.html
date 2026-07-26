@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gen Z - Our Creative Gallery</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Custom CSS for fonts */
+        body {
+            font-family: 'Luckiest Guy', cursive;
+            background-color: #f8fafc; /* Light blue-gray background */
+            color: #334155; /* Slate-700 for general text */
+        }
+        .font-bungee {
+            font-family: 'Bungee', cursive;
+        }
+        .font-luckiest-guy {
+            font-family: 'Luckiest Guy', cursive;
+        }
+        /* Custom scrollbar for a premium feel */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0; /* Light gray */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8; /* Darker gray-blue */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b; /* Even darker on hover */
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+    <!-- Navbar Section -->
+    <nav class="bg-white shadow-lg py-4 px-6 md:px-12 flex justify-between items-center rounded-b-xl sticky top-0 z-50">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+            <a href="index.html" class="text-4xl font-bungee text-indigo-700 hover:text-indigo-900 transition duration-300 ease-in-out">Gen Z</a>
+        </div>
+
+        <!-- Desktop Menu - simplified to just "Home" for this page -->
+        <div class="flex items-center space-x-8">
+            <a href="index.html" class="px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-luckiest-guy text-lg rounded-full shadow-lg hover:from-indigo-600 hover:to-purple-700 transition duration-300 ease-in-out transform hover:scale-105">
+                Back to Home
+            </a>
+        </div>
+    </nav>
+
+    <!-- Gallery Hero Section -->
+    <header class="relative bg-gradient-to-br from-indigo-500 to-purple-700 text-white flex items-center justify-center min-h-[50vh] px-6 py-20 rounded-b-3xl overflow-hidden shadow-2xl">
+        <!-- Background Elements for Visual Appeal -->
+        <div class="absolute inset-0 z-0 opacity-20">
+            <img src="./images/IMG-20250213-WA0015.jpg" alt="Abstract Background" class="w-full h-full object-cover blur-sm">
+        </div>
+        <div class="absolute inset-0 z-0 bg-black opacity-30"></div>
+
+        <div class="relative z-10 text-center max-w-4xl space-y-6">
+            <h1 class="text-5xl md:text-7xl font-bungee leading-tight drop-shadow-lg animate-fade-in-down">
+                See Our Vision in Action
+            </h1>
+            <p class="text-xl md:text-2xl font-luckiest-guy opacity-90 drop-shadow-md animate-fade-in-up">
+                Explore our portfolio of custom patches and personalized T-shirts.
+            </p>
+        </div>
+    </header>
+
+    <!-- Gallery Section - Grid of Images -->
+    <section id="gallery-content" class="py-20 px-6 md:px-12 bg-white rounded-3xl -mt-16 relative z-20 shadow-xl">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-5xl font-bungee text-indigo-800 mb-12 animate-fade-in">Our Creative Showcase</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Gallery Item 1 -->
+                <div class="bg-gray-100 rounded-xl overflow-hidden shadow-md group transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="./images/Vibrant Embroidered Patch.jpeg" alt="Embroidered Patch Design" class="w-full h-64 object-cover group-hover:opacity-80 transition-opacity">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bungee text-indigo-700 mb-2">Vibrant Embroidered Patch</h3>
+                        <p class="text-lg font-luckiest-guy text-gray-700">Detailed stitching with bold colors for a club logo.</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 2 -->
+                <div class="bg-gray-100 rounded-xl overflow-hidden shadow-md group transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="./images/Screen Print Tee.jpeg" alt="Screen Printed T-Shirt" class="w-full h-64 object-cover group-hover:opacity-80 transition-opacity">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bungee text-indigo-700 mb-2">Urban Screen Print Tee</h3>
+                        <p class="text-lg font-luckiest-guy text-gray-700">Clean lines and minimalist design on soft cotton.</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 3 -->
+                <div class="bg-gray-100 rounded-xl overflow-hidden shadow-md group transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="./images/PVC Patch.jpeg" alt="PVC Patch Design" class="w-full h-64 object-cover group-hover:opacity-80 transition-opacity">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bungee text-indigo-700 mb-2">Durable PVC Patch</h3>
+                        <p class="text-lg font-luckiest-guy text-gray-700">Raised 3D effect, perfect for outdoor gear.</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 4 -->
+                <div class="bg-gray-100 rounded-xl overflow-hidden shadow-md group transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="./images/colorfull te.jpeg" alt="DTG T-Shirt Design" class="w-full h-64 object-cover group-hover:opacity-80 transition-opacity">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bungee text-indigo-700 mb-2">Direct-to-Garment Art Tee</h3>
+                        <p class="text-lg font-luckiest-guy text-gray-700">Full-color graphic with incredible detail.</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 5 -->
+                <div class="bg-gray-100 rounded-xl overflow-hidden shadow-md group transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="./images/Woven path.jpeg" alt="Woven Patch Design" class="w-full h-64 object-cover group-hover:opacity-80 transition-opacity">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bungee text-indigo-700 mb-2">Finely Woven Patch</h3>
+                        <p class="text-lg font-luckiest-guy text-gray-700">High-resolution design for intricate logos.</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 6 -->
+                <div class="bg-gray-100 rounded-xl overflow-hidden shadow-md group transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="./images/team-wear.jpg" alt="Team Apparel Design" class="w-full h-64 object-cover group-hover:opacity-80 transition-opacity">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bungee text-indigo-700 mb-2">Custom Team Apparel</h3>
+                        <p class="text-lg font-luckiest-guy text-gray-700">Matching patches and tees for a cohesive team look.</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 7 -->
+                <div class="bg-gray-100 rounded-xl overflow-hidden shadow-md group transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="./images/brand merch.png" alt="Merchandise Bundle" class="w-full h-64 object-cover group-hover:opacity-80 transition-opacity">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bungee text-indigo-700 mb-2">Brand Merchandise Bundle</h3>
+                        <p class="text-lg font-luckiest-guy text-gray-700">Patches, tees, and more for full brand representation.</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 8 -->
+                <div class="bg-gray-100 rounded-xl overflow-hidden shadow-md group transform hover:scale-105 transition duration-300 ease-in-out">
+                    <img src="./images/event tee.png" alt="Event T-Shirt Design" class="w-full h-64 object-cover group-hover:opacity-80 transition-opacity">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bungee text-indigo-700 mb-2">Dynamic Event T-Shirt</h3>
+                        <p class="text-lg font-luckiest-guy text-gray-700">Memorable design for a special occasion.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="index.html#quote" class="inline-block mt-12 px-8 py-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-900 font-luckiest-guy text-xl rounded-full shadow-lg hover:from-yellow-500 hover:to-orange-600 transition duration-300 ease-in-out transform hover:scale-105">
+                Ready to Start Your Project?
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Section (Copied from main page for consistency) -->
+    <footer class="bg-gray-900 text-gray-300 py-12 px-6 md:px-12 rounded-t-3xl shadow-inner mt-16">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+            <div class="text-center md:text-left">
+                <p class="text-xl font-bungee text-white mb-2">Gen Z</p>
+                <p class="text-sm font-luckiest-guy">&copy; 2025 Gen Z. All rights reserved.</p>
+            </div>
+            <div class="flex space-x-6 text-2xl">
+                <!-- <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-facebook-f"></i></a> -->
+                <a href="https://www.instagram.com/codeexis.dev/" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/EthanCole111" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                <!-- <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-linkedin-in"></i></a> -->
+
+            </div>
+            <div class="text-center md:text-right space-y-2">
+                <a href="index.html#home" class="block text-sm font-luckiest-guy hover:text-white transition-colors duration-300">Home</a>
+                <a href="about.html" class="block text-sm font-luckiest-guy hover:text-white transition-colors duration-300">About Us</a>
+                <a href="index.html#quote" class="block text-sm font-luckiest-guy hover:text-white transition-colors duration-300">Get a Quote</a>
+                <a href="index.html#contact" class="block text-sm font-luckiest-guy hover:text-white transition-colors duration-300">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
